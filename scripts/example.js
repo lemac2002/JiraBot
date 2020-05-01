@@ -9,7 +9,7 @@
 //   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
 module.exports = function(robot) {
-	robot.respond(/help/i, function(msg){
+	robot.hear(/help/i, function(msg){
 		var help = "Here's the list of available commands:\n\n";
 			help+="help -- lists available commands\n\n";
 			help+="list -- returns a list of all the issues you've reported\n\n";
