@@ -10,7 +10,7 @@
 
 module.exports = (robot) ->
 
-  robot.respond /help/i, (res) ->
+  robot.hear /help/i, (res) ->
     help = "Here's the list of available commands:\n\n
 help -- lists available commands\n\n
 list -- returns a list of all the issues you've reported\n\n
