@@ -1,6 +1,6 @@
 This folder contains all the scripts that we write for the bot.
 
-Any bot scripts, things like robot.respond functions and SMALL code blocks, should be in main.js
+Any bot scripts, things like robot.respond functions and small code blocks, should be in main.js
 
 Any other types of scripts should be in a separate file, to make reading and documenting easier
 
