@@ -42,7 +42,7 @@ To connect to a running bot requires the following:
 
 1. Click on the "Chat" icon in the upper left hand corner to show the "Bot Explorer"
 2. Click the "+" icon in "Endpoint"
-3. For the Endpoint URL enter http://<IP Docker has when running>:8080/api/messages
+3. For the Endpoint URL enter http://localhost:8080/api/messages
 4. Name the Bot
 5. Leave the remaining fields empty unless deploying the Bot in Azure or AWS
 6. Click "Save"
@@ -51,7 +51,7 @@ To connect to a running bot requires the following:
 
 **Examples:**
 
-- ```@JiraBot lulz```
+- ```@marcbot lulz```
 
 - ```Open the pod bay doors```
 
