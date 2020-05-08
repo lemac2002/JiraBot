@@ -1,7 +1,7 @@
 module.exports = function(robot) {
 	const fetch = require('node-fetch');
 	const List = require('./getList');
-	robot.hear(/help/i, function(msg){
+	robot.respond(/help/i, function(msg){
 		var help = "Here's the list of available commands:\n\n";
 		help+="help -- lists available commands\n\n";
 		help+="list -- returns a list of all the issues you've reported\n\n";
@@ -9,7 +9,7 @@ module.exports = function(robot) {
 		help+="status <status> -- returns a list of issues with the specified status";
 		msg.reply(help);
 	});
-	robot.hear(/list/i, function(msg){
+	robot.respond(/list/i, function(msg){
 		// This code sample uses the 'node-fetch' library:
 		// https://www.npmjs.com/package/node-fetch
 		var user = "mpaquette"
