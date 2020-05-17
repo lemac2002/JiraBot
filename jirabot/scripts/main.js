@@ -1,6 +1,15 @@
 module.exports = function(robot) {
 	const fetch = require('node-fetch');
 	const List = require('./getList');
+	
+	robot.respond(/(.*)/i,function(msg){
+        var a = msg.match[1];
+        var mac = "I do not know this command\n\n";
+        mac += "Use @JiraBot help to see a list of availible commands"
+        if(a != "help" && a != "list"){
+            msg.reply(mac);
+        }
+    });
 	robot.respond(/help/i, function(msg){
 		var help = "Here's the list of available commands:\n\n";
 		help+="help -- lists available commands\n\n";
