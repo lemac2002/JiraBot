@@ -4,10 +4,10 @@ module.exports = function(robot) {
 	
 	robot.respond(/(.*)/i,function(msg){
         var a = msg.match[1];
-        var mac = "I do not know this command\n\n";
-        mac += "Use @JiraBot help to see a list of availible commands"
+        var angry = "I do not know this command\n\n";
+         angry += "Use @JiraBot help to see a list of availible commands"
         if(a != "help" && a != "list"){
-            msg.reply(mac);
+            msg.reply(angry);
         }
     });
 	robot.respond(/help/i, function(msg){
